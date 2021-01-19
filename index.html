@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	
+	<title> Invoice </title>
+	
+	<link rel='stylesheet' type='text/css' href='css/style.css' />
+	<script type='text/javascript' src='js/jquery-1.3.2.min.js'></script>
+	<script type='text/javascript' src='js/custom.js'></script>
+
+</head>
+
+<body>
+
+	<div id="page-wrap">
+
+		<textarea id="header">INVOICE</textarea>
+		
+		<div id="identity">
+		
+            <textarea id="address">
+				Dheeraj Vishwakarma 
+				Sakinaka
+				Phone: 8856334729
+			</textarea>
+
+		</div>
+		
+		<div style="clear:both"></div>
+		<div id="customer">
+            <table id="meta">
+                <tr>
+                    <td class="meta-head">Invoice #</td>
+                    <td><textarea>001</textarea></td>
+                </tr>
+                <tr>
+
+                    <td class="meta-head">Date</td>
+                    <td><textarea id="date">August 12, 2018</textarea></td>
+				</tr>
+				<tr>
+					<td class="meta-head">Gmail ID</td>
+                    <td><textarea id="gmail">dhirajvishwakarma2020@gmail.com</textarea></td>
+				</tr>
+             
+
+            </table>
+		
+		</div>
+		
+		<table id="items">
+		
+		  <tr>
+		      <th> Hours of work at a certain rate</th>
+		      <th>Work-related expenses</th>
+			  <th>Materials</th>
+			  <th>Labor</th>
+		      <th>Price</th>
+		  </tr>
+		  
+		  <tr class="item-row">
+		      <td class="item-name"><div class="delete-wpr"><textarea>1 hr</textarea><a class="delete" href="javascript:;" title="Remove row">X</a></div></td>
+		      <td class="description"><textarea>100 </textarea></td>
+		      <td><textarea class="cost">650.00</textarea></td>
+		      <td><textarea class="qty">1</textarea></td>
+		      <td><span class="price">650.00</span></td>
+		  </tr>
+	
+		  
+		  <tr id="hiderow">
+		    <td colspan="5"><a id="addrow" href="javascript:;" title="Add a row">Add a row</a></td>
+		  </tr>
+		  
+		  <tr>
+		      <td colspan="2" class="blank"> </td>
+		      <td colspan="2" class="total-line">Subtotal</td>
+		      <td class="total-value"><div id="subtotal">650.00</div></td>
+		  </tr>
+		  <tr>
+
+		      <td colspan="2" class="blank"> </td>
+		      <td colspan="2" class="total-line">Total</td>
+		      <td class="total-value"><div id="total">650.00</div></td>
+		  </tr>
+		</table>
+		<div>
+		<p>
+		Enter Gmail ID And Send The Invoice Bill   <input type="text" id="gmail" name="gmail" value=""><br><br>
+			<input type="submit" value="send">
+		</div>
+			<div>
+				<div>
+			Payment option:- Cards(Debit/credit)
+							UPI Payment
+							NetBanking
+						</div>
+						</div>			
+		</p>
+
+
+		
+		
+		<div id="terms">
+		  <h5>dhirajvishwakarma2020@gmail.com</h5>
+		 <button type="button">Submit</button>
+		 <button type="button">update</button>
+		</div>
+		
+	
+	</div>
+	
+</body>
+
+</html>
